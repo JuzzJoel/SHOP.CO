@@ -435,7 +435,7 @@ position: relative;
 .browse-header{
     font-size: 48px;
     text-align: center;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 .browse-content{
     background-color: #f0f0f0f0;
@@ -447,13 +447,12 @@ position: relative;
     background: #f0f0f0f0;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     display: block;
-    
     margin: 30px 20px;
   }
 
   .row {
     display: flex;
-    margin-bottom: 20px;
+    margin: 30px 0 ;
   }
 
   .box {
@@ -463,7 +462,7 @@ position: relative;
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    margin-right: 20px;
+    margin: 20px 0 ;
   }
 
   /* .box:last-child {
@@ -492,7 +491,7 @@ position: relative;
     background-position: center;
     width: 750px;
     height: 300px;
-    background-size: fill;
+    background-size: cover;
   }
 
   .box3 {
@@ -501,7 +500,7 @@ position: relative;
     background-position: center;
     width: 750px;
     height: 300px;
-    background-size: contain;
+    background-size: cover;
   }
 
   .box4 {
@@ -510,10 +509,8 @@ position: relative;
     background-position: center;
     width: 450px;
     height: 300px;
-    background-size: contain;  
+    background-size: cover;  
   }
-
-
 
 
 .feedback{
