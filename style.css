@@ -147,7 +147,7 @@ position: relative;
 }
 .hero-container h1{
     font-size: 64px;
-    color: black;;
+    color: black;
     font-weight: bolder;
     line-height: 1.2;
     padding: 10px;
@@ -199,7 +199,7 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
 }
 .hero-card #hero-card-span:first-child{
     border-left: none;
@@ -263,9 +263,7 @@ position: relative;
 #brands{
  flex-basis: 20%;
  display: flex;
- 
 }
-
 
 .brands-card :first-child{
     background: url(vectors/versace.png);
@@ -426,36 +424,30 @@ position: relative;
     width: 94px;
 }
 
-
-
-
 .browse{
     display: block;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 50px;
     height: 870px;
     width: 100%;
 }
 .browse-header{
     font-size: 48px;
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .browse-content{
-    background-color: #f9f9f9;
+    background-color: #f0f0f0f0;
     height: 890px;
     border-radius: 40px;
     width: 90%;
-
-
 }
 .browse-container {
-    background: #f0f0f0;
+    background: #f0f0f0f0;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     display: block;
-    width: 90%;
+    
     margin: 30px 20px;
   }
 
@@ -477,15 +469,12 @@ position: relative;
   /* .box:last-child {
     margin-right: 0;
   } */
-
   .square {
     width: 450px;
   }
-
   .rectangle {
     width: 750px;
   }
-
   /* Background images for each span */
   .box1 {
     background-image: url('images/Frame\ 61.png');
