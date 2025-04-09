@@ -482,6 +482,7 @@ position: relative;
     background-position: center;
     width: 450px;
     height: 300px;
+    background-size:cover;
   
   }
 
@@ -491,6 +492,7 @@ position: relative;
     background-position: center;
     width: 750px;
     height: 300px;
+    background-size:cover;
   }
 
   .box3 {
@@ -499,6 +501,7 @@ position: relative;
     background-position: center;
     width: 750px;
     height: 300px;
+    background-size:cover;
   }
 
   .box4 {
@@ -507,6 +510,7 @@ position: relative;
     background-position: center;
     width: 450px;
     height: 300px;
+    background-size:cover;  
   }
 
 
