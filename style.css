@@ -669,6 +669,8 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   margin-left: 5px;
+  color: #000;
+  text-decoration: none;
 }
 
 footer {
