@@ -439,65 +439,88 @@ input[type="text"] {
   width: 94px;
 }
 
-.browse {
-    width: 86%;
-    background-color: #f0f0f0;
-    border-radius: 40px;
+
+.main-container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
   }
-  
-  .browse-header {
-    font-size: 48px;
+
+  h1 {
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    text-transform: uppercase;
   }
-  
-  .browse-container {
-    padding: 0 5%;
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1110px;
+    margin: 0 auto;
   }
-  
+
   .row {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    width: 100%;
+    gap: 25px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  .box {
-    flex: 1;
+
+  .category-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: relative;
+    height: 290px;
+  }
+
+  .category-name {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .category-image {
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
-    overflow: hidden;
-    min-width: 150px;
   }
-  
-  .square {
-    aspect-ratio: 1 / 1;
+
+  /* Corrected card widths to match the image */
+  .casual, .party {
+    width: 400px;
   }
-  
-  .rectangle {
-    aspect-ratio: 16 / 9;
+
+  .formal, .gym {
+    width: 685px;
   }
-  
-  .box1 {
-    background-image: url("../images/Frame 61.png");
+
+  /* Background placeholder images */
+  .casual-img {
+    background-image: url('images/');
   }
-  
-  .box2 {
-    background-image: url("../images/Frame 62.png");
+
+  .formal-img {
+    background-image: url('/api/placeholder/685/290');
   }
-  
-  .box3 {
-    background-image: url("../images/Frame 64.png");
+
+  .party-img {
+    background-image: url('/api/placeholder/400/290');
   }
-  
-  .box4 {
-    background-image: url("../images/Frame 63.png");
+
+  .gym-img {
+    background-image: url('/api/placeholder/685/290');
   }
-  
+
 .feedback-heading {
   display: inline-block;
   width: 85%;
@@ -775,3 +798,50 @@ footer p {
     border: none;
   }
 }
+
+
+
+
+
+
+
+
+
+/* 
+
+
+   /* Responsive design */
+   @media screen and (max-width: 1140px) {
+    .row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .category-card {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .main-container {
+      padding: 20px;
+    }
+
+    .casual, .party, .formal, .gym {
+      width: 100%;
+      max-width: 400px;
+      height: 240px;
+    }
+
+    .category-name {
+      font-size: 28px;
+      top: 20px;
+      left: 20px;
+    }
+  } */
+
