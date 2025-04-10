@@ -340,6 +340,11 @@ position: relative;
     color: #ffffff;
 }
 
+
+.section-divider{
+    width: 90%;
+    margin: 0 auto;
+}
 .top-selling{
     display: block;
     justify-content: center;
@@ -443,8 +448,8 @@ position: relative;
 
 .browse-container {
     display: block;
-    margin: 30px 20px;
-    padding: 0 30px 30px;
+    margin: 50px 30px;
+    padding: 0 50px 50px;
   }
 
   .row {
@@ -514,6 +519,26 @@ position: relative;
     gap: 20px;
     padding: 10px;
     height: 250px;
+}
+
+.feedback-heading{
+    display: flex;
+
+}
+
+.feedback-header{
+    font-size: 48px;
+}
+
+.feedback-heading .scroll-icons{
+
+}
+
+.fa.fa-arrow-left[class],.fa.fa-arrow-right[class]{
+    width: 100%;
+    font-size: 20px;
+    vertical-align: middle;
+
 }
 
 
