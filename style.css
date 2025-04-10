@@ -438,10 +438,12 @@ input[type="text"] {
   outline: none;
   width: 94px;
 }
+.browse{
+    width: 100%;
+}
 
-
-.main-container {
-    max-width: 1200px;
+.browse-container {
+    width: 86.11%;
     margin: 0 auto;
     padding: 40px;
     background-color: #f0f0f0;
@@ -495,7 +497,7 @@ input[type="text"] {
     background-position: center;
   }
 
-  /* Corrected card widths to match the image */
+  
   .casual, .party {
     width: 400px;
   }
@@ -504,21 +506,20 @@ input[type="text"] {
     width: 685px;
   }
 
-  /* Background placeholder images */
   .casual-img {
-    background-image: url('images/');
+    background-image: url('images/image 11.png');
   }
 
   .formal-img {
-    background-image: url('/api/placeholder/685/290');
+    background-image: url('images/image 13.png');
   }
 
   .party-img {
-    background-image: url('/api/placeholder/400/290');
+    background-image: url('images/image 12.png');
   }
 
   .gym-img {
-    background-image: url('/api/placeholder/685/290');
+    background-image: url('images/image 14.png');
   }
 
 .feedback-heading {
@@ -805,11 +806,6 @@ footer p {
 
 
 
-
-
-/* 
-
-
    /* Responsive design */
    @media screen and (max-width: 1140px) {
     .row {
@@ -843,5 +839,5 @@ footer p {
       top: 20px;
       left: 20px;
     }
-  } */
+  } 
 
