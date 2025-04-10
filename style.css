@@ -445,9 +445,9 @@ input[type="text"] {
 .browse-container {
     width: 86.11%;
     margin: 0 auto;
-    padding: 40px;
+    padding:4 0px;
     background-color: #f0f0f0;
-    border-radius: 20px;
+    border-radius: 40px;
   }
 
   h1 {
@@ -456,26 +456,28 @@ input[type="text"] {
     font-weight: 900;
     margin-bottom: 50px;
     text-transform: uppercase;
+    padding-top: 50px;
   }
 
   .gallery-container {
     display: flex;
     flex-direction: column;
-    max-width: 1110px;
+    max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 100px;
   }
 
   .row {
     display: flex;
     width: 100%;
-    gap: 25px;
+    gap: 1.5%;
     margin-bottom: 20px;
     justify-content: center;
   }
 
   .category-card {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: relative;
@@ -498,12 +500,12 @@ input[type="text"] {
   }
 
   
-  .casual, .party {
-    width: 400px;
+  .casual, .gym {
+    width: 32%;
   }
 
-  .formal, .gym {
-    width: 685px;
+  .formal, .party {
+    width: 53%;
   }
 
   .casual-img {
@@ -522,12 +524,16 @@ input[type="text"] {
     background-image: url('images/image 14.png');
   }
 
-.feedback-heading {
-  display: inline-block;
+.review{
+  display: flex;
+  width: 85%;
+}
+.review-heading {
+  display: block;
   width: 85%;
 }
 
-.feedback-heading .feedback-header {
+.review-heading .review-header {
   font-size: 48px;
   font-weight: bold;
   float: left;
@@ -535,181 +541,196 @@ input[type="text"] {
   display: block;
 }
 
-.feedback-heading .scroll-icons {
+.review-heading .scroll-icons {
   padding: 30px;
   float: right;
   width: 10%;
   display: flex;
 }
-.feedback-heading .scroll-icons .scroll {
+.review-heading .scroll-icons .scroll {
   padding: 10px;
   outline: none;
   border: none;
   background: inherit;
 }
+.review-cards {
+width:85%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px;
+   
+  }
+.review-card {
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
 
-.subscribe {
-  height: 420px;
-  margin-bottom: 10px;
-  width: 86.11%;
-  margin: 0 auto;
-}
-.subscribe-content {
-  height: 180px;
-  background-color: black;
-  display: flex;
-  border-radius: 20px;
-  width: 100%;
-  margin: 0 auto;
-}
-.subscribe-card {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 10px;
-  height: 180px;
-  margin-bottom: 20px;
-  float: left;
-}
-.subscribe-card .offers {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 40px;
-  color: white;
-  font-weight: bold;
-  width: 550px;
-}
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 40%;
-  float: right;
-  vertical-align: middle;
-}
-.subscribe-content .form-container input {
-  width: 350px;
-  border-radius: 62px;
-  padding: 16px 32px;
-  border: none;
-  margin-bottom: 10px;
-  background: url("https://img.icons8.com/ios/20/secured-letter--v1.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  background-color: white;
-}
-.subscribe-content .form-container input:focus {
-  outline: none;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 2px;
-}
-.subscribe-content .form-container input::placeholder {
-  color: #d9d9d9;
-  font-size: 16px;
-}
-.subscribe-content .form-container button {
-  background-color: #ffffff;
-  color: black;
-  font-size: 16px;
-  border: none;
-  padding: 16px 32px;
-  border-radius: 62px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.1);
-  width: 350px;
-  padding: 16px 32px;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 1.2;
-  display: flex;
-}
-.subscribe ul{
+  .stars {
+    color: #ffc107;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .verified {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .reviewer {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .check {
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .review-text {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 60px 40px 20px;
+    color: #333;
+  }
+
+  .newsletter {
+    background-color: #000;
+    color: white;
+    padding: 40px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .newsletter h2 {
+    font-size: 32px;
+    font-weight: bold;
+    max-width: 600px;
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .newsletter-form input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    width: 250px;
+    outline: none;
+  }
+
+  .newsletter-form button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .footer-column {
+    flex: 1 1 160px;
+    margin: 20px;
+  }
+
+  .footer-column h4 {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .footer-column ul {
     list-style: none;
-}
-.subscribe ul a{
-    text-decoration: none;
-    color: #000;
-}
+    padding: 0;
+  }
 
-.about-us {
-  height: 180px;
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-}
-.about-content {
-  display: flex;
-  width: 86.11%;
-}
-#about {
-  flex-basis: 20%;
-}
-.about-content span li {
-  display: block;
-  text-decoration: none;
-  color: #000000;
-  font-size: 16px;
-}
-.about-content span a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 16px;
-}
-.about-content span h3 {
-  padding: 7px;
-}
-.about-content span ul {
-  padding: 33px 5px 33px;
-  letter-spacing: 1.2px;
-  height: 120px;
-  text-align: left;
-}
+  .footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+  }
 
-.about-logo {
-  font-size: 33.45px;
-  font-weight: bold;
-}
-.logo-sec p {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-.social-media {
-  border-radius: 50%;
-  width: 100%;
-  display: flex;
-}
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
 
-.social-media a {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid grey;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5px;
-  color: #000;
-  text-decoration: none;
-}
+  .footer-description {
+    font-size: 14px;
+    max-width: 280px;
+    color: #666;
+  }
 
-footer {
-  background-color: #f0f0f0;
-  padding: 16px 32px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-footer p {
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  padding: 10px;
-}
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .social-icons i {
+    font-size: 18px;
+    background: #000;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+  }
+
+  .payment-icons img {
+    height: 20px;
+    margin-left: 10px;
+  }
+
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   header {
     text-align: center;
@@ -840,4 +861,30 @@ footer p {
       left: 20px;
     }
   } 
+      
+  @media (max-width: 768px) {
+    .newsletter {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
+    .newsletter-form {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+      width: 100%;
+    }
+
+    .footer-content {
+      flex-direction: column;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  }
