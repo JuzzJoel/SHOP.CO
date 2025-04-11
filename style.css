@@ -13,7 +13,7 @@ html, body {
 
 body {
   padding-top: 76px;
-  font-family: "Integral CF", sans-serif;
+  font-family: "Integral CF", 'Satoshi', sans-serif;
   transition: padding-top 0.3s;
 }
 
@@ -74,6 +74,7 @@ body.alert-active {
 .header__logo {
   font-weight: bold;
   font-size: 32px;
+  font-family: "Integral CF", sans-serif;
 }
 
 .nav__list {
@@ -85,6 +86,8 @@ body.alert-active {
 .nav__item {
   display: flex;
   align-items: center;
+  font-family:  'Satoshi',sans-serif;
+
 }
 
 .nav__link {
@@ -164,6 +167,8 @@ body.alert-active {
 .search__input::placeholder {
   color: rgba(0, 0, 0, 0.4);
   font-size: 16px;
+  font-family:  'Satoshi',sans-serif;
+
 }
 
 .header__icons {
@@ -217,6 +222,7 @@ input[type="text"] {
   text-align: left;
   line-height: 1.5;
   font-weight: 900;
+  font-family:  'Satoshi',sans-serif;
 }
 
 .hero__image-container {
@@ -419,10 +425,13 @@ input[type="text"] {
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .section__header {
-  font-size: 40px;
+  font-size: 48px;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  font-family: "Integral CF", sans-serif;
+  font-weight: bold;
+
 }
 
 .products__container {
@@ -481,6 +490,8 @@ input[type="text"] {
 
 .product-card h3 {
   font-size: 20px;
+  font-family:  'Satoshi',sans-serif;
+
 }
 
 .product-card label {
@@ -541,6 +552,8 @@ input[type="text"] {
   margin-bottom: 50px;
   text-transform: uppercase;
   padding-top: 50px;
+  font-family: "Integral CF", sans-serif;
+
 }
 
 .categories-grid {
@@ -572,8 +585,10 @@ input[type="text"] {
   position: absolute;
   top: 30px;
   left: 30px;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
+  font-family:  'Satoshi',sans-serif;
+
 }
 
 .category-card__image {
@@ -628,6 +643,8 @@ input[type="text"] {
 .testimonials__title {
   font-size: 48px;
   margin: 0;
+  font-family: "Integral CF", sans-serif;
+
 }
 
 .testimonials__controls {
@@ -716,6 +733,8 @@ input[type="text"] {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.5;
+  font-family:  'Satoshi',sans-serif;
+
 }
 /* Newsletter Section */
   .newsletter {
@@ -746,6 +765,8 @@ input[type="text"] {
     font-size: 2.5rem;
     font-weight: bold;
     max-width: 600px;
+    font-family: "Integral CF", sans-serif;
+
   }
   
   .newsletter__form {
@@ -759,6 +780,12 @@ input[type="text"] {
     position: relative; 
     width: 100%;
   }
+  
+  .input-container::placeholder{
+    font-family:  'Satoshi',sans-serif;
+  }
+   
+
   
   .input-container .fa-envelope {
     position: absolute; 
@@ -787,6 +814,8 @@ input[type="text"] {
     font-weight: bold;
     cursor: pointer;
     width: 350px;
+    font-family:  'Satoshi',sans-serif;
+
   }
   
 /* Footer */
@@ -796,6 +825,8 @@ input[type="text"] {
   width: 100%;
   margin: 0 auto;
   margin-top: 100px;
+  font-family:  'Satoshi',sans-serif;
+
 }
 
 
@@ -837,6 +868,8 @@ input[type="text"] {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: "Integral CF", sans-serif;
+
 }
 
 .footer__description {
