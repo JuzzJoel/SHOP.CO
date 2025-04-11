@@ -918,7 +918,7 @@ input[type="text"] {
 /* ----------------------
    1140px Breakpoint
    ---------------------- */
-   @media screen and (max-width: 1140px) {
+   @media screen and (max-width: 1140px)and (min-width: 767px) and (max-width: 1023px){
     .categories-row {
       flex-wrap: wrap;
       justify-content: center;
@@ -928,11 +928,11 @@ input[type="text"] {
       margin-bottom: 20px;
     }
   }
-  
+   
   /* ----------------------
      1023px Breakpoint (Tablet)
      ---------------------- */
-  @media screen and (min-width: 767px) and (max-width: 1023px) {
+  @media screen  {
     .header {
       text-align: center;
       gap: 10px;
