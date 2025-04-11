@@ -17,6 +17,33 @@ body {
   font-family: "Integral CF", sans-serif;
 }
 
+.alert-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000; 
+  color: #ffffff;
+  padding: 15px;
+  z-index: 1000; 
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  /* display: none;  */
+}
+.alert__link a{
+  color: #fff;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 /* Header Styles */
 .header {
   display: flex;
@@ -27,7 +54,7 @@ body {
   position: relative;
   width: 100%;
   max-width:100%;
-  z-index: 1000;
+  z-index: 100;
   margin: 0;
 }
 
@@ -97,15 +124,28 @@ body {
   gap: 20px;
   position: relative;
 }
+.search__container{
+  position: relative;
+
+}
+.search__container .fa-search {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #d9d9d9;
+  z-index: 1;  
+}
 
 .search__input {
   width: 40%;
-  padding: 16px 32px;
+  padding: 15px 20px  15px 45px;
   border-radius: 62px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.1);
   border: none;
 }
+
 
 .search__input:focus {
   outline: none;
@@ -113,7 +153,7 @@ body {
 }
 
 .search__input::placeholder {
-  color: gray;
+  color: rgba(0, 0, 0, 0.4);
   font-size: 16px;
 }
 
@@ -136,7 +176,7 @@ input[type="text"] {
   border-radius: 62px;
   font-size: 16px;
   background-color: white;
-  background-image: url("https://img.icons8.com/ios/24/search--v1.png");
+ 
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -365,11 +405,13 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   height: 800px;
-  width: 100%;
+  width: 86.11%;
   margin: 0 auto;
+ 
+}
+.arrivals{
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
 .section__header {
   font-size: 40px;
   text-align: center;
@@ -407,13 +449,20 @@ input[type="text"] {
 /* Product Cards */
 .products-grid {
   display: flex;
-  gap: 1%;
+  gap: 1.6% 9%;
   margin: auto;
-  width: 80%;
+  width: 100%;
+}
+.products-grid .product-card:first-child {
+  margin-left: 0; 
+}
+
+.products-grid .product-card:last-child {
+  margin-right: 0; 
 }
 
 .product-card {
-  width: 20.5%;
+  width: 23.79%;
   margin: 0 auto;
 }
 
@@ -695,15 +744,30 @@ input[type="text"] {
     display: flex;
     gap: 10px;
     margin-top: 20px;
+    flex-direction: column;
+  }
+  
+  .input-container {
+    position: relative; 
+    width: 100%;
+  }
+  
+  .input-container .fa-envelope {
+    position: absolute; 
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%); 
+    color: #888; 
+    z-index: 1;
   }
   
   .newsletter__input {
-    padding: 15px 20px;
+    padding: 15px 20px 15px 45px; 
     border: none;
     border-radius: 50px;
     width: 250px;
     outline: none;
-    position: relative;
+    width: 350px;
   }
   
   .newsletter__button {
@@ -714,6 +778,7 @@ input[type="text"] {
     color: black;
     font-weight: bold;
     cursor: pointer;
+    width: 350px;
   }
   
 /* Footer */
@@ -853,17 +918,11 @@ input[type="text"] {
     input[type="text"] {
       width: 0px;
       box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 62px;
+      
       font-size: 16px;
       background-color: #f0f0f0;
-      background-image: url("https://img.icons8.com/ios/20.27/search--v1.png");
-      background-position: 10px 10px;
-      background-repeat: no-repeat;
-      padding: 10px 20px;
-      border: none;
-      outline: none;
-      right: -6em;
+  
+      
     }
   
     .header__icons {
@@ -900,13 +959,10 @@ input[type="text"] {
     input[type="text"] {
       width: 0px;
       box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 62px;
-      font-size: 16px;
-      background-color: #f0f0f0;
-      background-image: url("https://img.icons8.com/ios/20.27/search--v1.png");
+    
+     
       background-position: 10px 10px;
-      background-repeat: no-repeat;
+      
       padding: 10px 20px;
       border: none;
       outline: none;

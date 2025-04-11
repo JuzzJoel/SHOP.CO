@@ -8,6 +8,13 @@
     <script src="https://kit.fontawesome.com/8c332603b5.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
+    <div id="new-visitor-alert" class="alert-box">
+      <span class="close-button">&times;</span>
+      <p>Sign up and get 20% off to your first order.
+        <span class="alert__link"><a href="">Sign Up Now.</a></span></p>
+    </div>
+
     <header class="header">
       <div class="header__toggle">
         <i class="fa-solid fa-bars"></i>
@@ -24,7 +31,7 @@
               <div class="dropdown__content">
                 <a href="#">Men</a>
                 <a href="#">Women</a>
-                <a href="#">Accessories</a>
+                <a href="#">Children</a>
               </div>
             </div>
           </li>
@@ -34,12 +41,16 @@
         </ul>
       </nav>
       <div class="search">
-        <input
+        <div class="search__container">
+          <i class="fa-solid fa-search"></i>
+          <input
           type="text"
           class="search__input"
           id="search"
           placeholder="Search for products..."
         />
+        </div>
+       
       </div>
       <div class="header__icons">
         <a href="#"><i class="fa-solid fa-shopping-cart header__icon"></i></a>
@@ -94,7 +105,7 @@
         </div>
       </aside>
 
-      <section class="products-section">
+      <section class="products-section arrivals">
         <h2 class="section__header">NEW ARRIVALS</h2>
         <div class="products__container">
           <div class="products-grid">
@@ -183,7 +194,7 @@
         </div>
       </section>
 
-      <section class="products-section">
+      <section class="products-section sales">
         <h2 class="section__header">TOP SELLING</h2>
         <div class="products__container">
           <div class="products-grid">
@@ -407,8 +418,10 @@
           <div class="newsletter__column">
             <h2 class="newsletter__title">STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h2>
             <div class="newsletter__form">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" class="newsletter__input" placeholder=" Enter your email address" />
+              <div class="input-container">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" class="newsletter__input" placeholder="Enter your email address" />
+              </div>
               <button class="newsletter__button">Subscribe to Newsletter</button>
             </div>
           </div>
