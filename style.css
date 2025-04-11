@@ -224,20 +224,19 @@ input[type="text"] {
 .stats {
   display: flex;
   position: relative;
-  left: -160px; /* Changed from -105px to -160px */
-  width: calc(100% + 160px); /* Add this to prevent horizontal scroll */
+  /* Remove any left positioning */
+  width: 50%; /* Reduced width */
+  margin-right: -20%; /* Push container right by 20px */
 }
 
 .stats__container {
   display: flex;
-  gap: 20px;
   text-align: center;
   justify-content: space-between;
-  width: 50%;
-  /* Remove any existing left/margin properties here */
+  width: 100%; /* Keep at 100% of parent's 50% width */
 }
 
-/* Keep all other existing styles exactly the same */
+/* Keep all other styles exactly the same */
 .stats__item {
   font-size: 16px;
   color: #d9d9d9;
