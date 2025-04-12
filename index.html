@@ -28,7 +28,7 @@
           <li class="nav__item">
             <div class="dropdown">
               <button class="dropdown__button">
-                Shop
+                <a href="product-detail.html">Shop</a>
                 <i class="fa fa-angle-down dropdown__icon"></i>
               </button>
               <div class="dropdown__content">
@@ -38,9 +38,9 @@
               </div>
             </div>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">On Sale</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">New Arrivals</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Brands</a></li>
+          <li class="nav__item"><a href="#top__sales" class="nav__link">On Sale</a></li>
+          <li class="nav__item"><a href="#new__arrivals" class="nav__link">New Arrivals</a></li>
+          <li class="nav__item"><a href="category.html" class="nav__link">Brands</a></li>
         </ul>
       </nav>
       <div class="search">
@@ -56,12 +56,12 @@
        
       </div>
       <div class="header__icons">
-        <a href="#"><i class="fa-solid fa-shopping-cart header__icon"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-shopping-cart header__icon"></i></a>
         <a href="#"><i class="fa fa-user-circle-o header__icon"></i></a>
       </div>
     </header>
 
-    <main>
+    <main id="#home">
       <section class="hero">
         <div class="hero__image-container">
           <div class="hero__content">
@@ -113,7 +113,7 @@
         </div>
       </aside>
 
-      <section class="products-section arrivals">
+      <section class="products-section arrivals" id="#new__arrivals">
         <h2 class="section__header">NEW ARRIVALS</h2>
         <div class="products__container">
           <div class="products-grid">
@@ -202,7 +202,7 @@
         </div>
       </section>
 
-      <section class="products-section sales">
+      <section class="products-section sales" id="#top__sales">
         <h2 class="section__header">TOP SELLING</h2>
         <div class="products__container">
           <div class="products-grid">
@@ -419,90 +419,92 @@
           </div>
         </div>
       </section>
-    
-      
-      <section class="newsletter">
-        <div class="newsletter__content">
-          <div class="newsletter__column">
-            <h2 class="newsletter__title">STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h2>
-            <div class="newsletter__form">
-              <div class="input-container">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="email" class="newsletter__input" placeholder="Enter your email address" />
-              </div>
-              <button class="newsletter__button">Subscribe to Newsletter</button>
-            </div>
-          </div>
-      </section>
-      
+    </main>
 
-        <footer class="footer">
-        <div class="footer__content">
-          <div class="footer__column">
-            <div class="footer__logo">SHOP.CO</div>
-            <div class="footer__description">
-              We have clothes that suits your style and which you're proud to wear. From women to men.
+
+      <footer class="footer">
+        <div class="newsletter">
+          <div class="newsletter__content">
+            <div class="newsletter__column">
+              <h2 class="newsletter__title">STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h2>
+              <div class="newsletter__form">
+                <div class="input-container">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" class="newsletter__input" placeholder="Enter your email address" />
+                </div>
+                <button class="newsletter__button">Subscribe to Newsletter</button>
+              </div>
             </div>
-            <div class="social-links">
-              <i class="fab fa-twitter social-links__icon"></i>
-              <i class="fab fa-facebook-f social-links__icon"></i>
-              <i class="fab fa-instagram social-links__icon"></i>
-              <i class="fab fa-github social-links__icon"></i>
+          </div>
+        </div>
+          
+        <div class="footer__content__container">
+          <div class="footer__content">
+            <div class="footer__column">
+              <div class="footer__logo">SHOP.CO</div>
+              <div class="footer__description">
+                We have clothes that suits your style and which you're proud to wear. From women to men.
+              </div>
+              <div class="social-links">
+                <i class="fab fa-twitter social-links__icon"></i>
+                <i class="fab fa-facebook-f social-links__icon"></i>
+                <i class="fab fa-instagram social-links__icon"></i>
+                <i class="fab fa-github social-links__icon"></i>
+              </div>
+            </div>
+        
+            <div class="footer__column">
+              <h4 class="footer__column-title">Company</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item">About</li>
+                <li class="footer__list-item">Features</li>
+                <li class="footer__list-item">Works</li>
+                <li class="footer__list-item">Career</li>
+              </ul>
+            </div>
+        
+            <div class="footer__column">
+              <h4 class="footer__column-title">Help</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item">Customer Support</li>
+                <li class="footer__list-item">Delivery Details</li>
+                <li class="footer__list-item">Terms & Conditions</li>
+                <li class="footer__list-item">Privacy Policy</li>
+              </ul>
+            </div>
+        
+            <div class="footer__column">
+              <h4 class="footer__column-title">FAQ</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item">Account</li>
+                <li class="footer__list-item">Manage Deliveries</li>
+                <li class="footer__list-item">Orders</li>
+                <li class="footer__list-item">Payments</li>
+              </ul>
+            </div>
+        
+            <div class="footer__column">
+              <h4 class="footer__column-title">Resources</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item">Free eBooks</li>
+                <li class="footer__list-item">Development Tutorial</li>
+                <li class="footer__list-item">How to - Blog</li>
+                <li class="footer__list-item">Youtube Playlist</li>
+              </ul>
             </div>
           </div>
-      
-          <div class="footer__column">
-            <h4 class="footer__column-title">Company</h4>
-            <ul class="footer__list">
-              <li class="footer__list-item">About</li>
-              <li class="footer__list-item">Features</li>
-              <li class="footer__list-item">Works</li>
-              <li class="footer__list-item">Career</li>
-            </ul>
+        
+          <div class="footer__bottom">
+            <div>Shop.co © 2000–2023, All Rights Reserved</div>
+            <div class="payment-methods">
+              <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+              <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard" />
+              <img src="https://img.icons8.com/color/48/paypal.png" alt="Paypal" />
+              <img src="https://img.icons8.com/color/48/apple-pay.png" alt="Apple Pay" />
+              <img src="https://img.icons8.com/color/48/google-pay.png" alt="Google Pay" />
+            </div>
           </div>
-      
-          <div class="footer__column">
-            <h4 class="footer__column-title">Help</h4>
-            <ul class="footer__list">
-              <li class="footer__list-item">Customer Support</li>
-              <li class="footer__list-item">Delivery Details</li>
-              <li class="footer__list-item">Terms & Conditions</li>
-              <li class="footer__list-item">Privacy Policy</li>
-            </ul>
-          </div>
-      
-          <div class="footer__column">
-            <h4 class="footer__column-title">FAQ</h4>
-            <ul class="footer__list">
-              <li class="footer__list-item">Account</li>
-              <li class="footer__list-item">Manage Deliveries</li>
-              <li class="footer__list-item">Orders</li>
-              <li class="footer__list-item">Payments</li>
-            </ul>
-          </div>
-      
-          <div class="footer__column">
-            <h4 class="footer__column-title">Resources</h4>
-            <ul class="footer__list">
-              <li class="footer__list-item">Free eBooks</li>
-              <li class="footer__list-item">Development Tutorial</li>
-              <li class="footer__list-item">How to - Blog</li>
-              <li class="footer__list-item">Youtube Playlist</li>
-            </ul>
-          </div>
+        </footer>
         </div>
-      
-        <div class="footer__bottom">
-          <div>Shop.co © 2000–2023, All Rights Reserved</div>
-          <div class="payment-methods">
-            <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
-            <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard" />
-            <img src="https://img.icons8.com/color/48/paypal.png" alt="Paypal" />
-            <img src="https://img.icons8.com/color/48/apple-pay.png" alt="Apple Pay" />
-            <img src="https://img.icons8.com/color/48/google-pay.png" alt="Google Pay" />
-          </div>
-        </div>
-        </div>
-      </footer>
     </body>
 </html>
