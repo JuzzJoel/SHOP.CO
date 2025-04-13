@@ -64,6 +64,8 @@
 a {
   text-decoration: none;
   color: inherit;
+  outline: none;
+  border: none;
 
 }
 
@@ -79,7 +81,7 @@ body {
 
 body {
   padding-top: 76px;
-  font-family: "Integral CF", 'Satoshi', sans-serif;
+  font-family: "Integral CF", var(--font-secondary);
   transition: padding-top 0.3s;
   display: flex;
   flex-direction: column;
@@ -90,9 +92,6 @@ body.alert-active {
   padding-top: 116px;
 }
 
-main {
-  flex: 1 0 auto;
-}
 
 .alert-box {
   position: fixed;
@@ -163,7 +162,7 @@ main {
 .header__logo {
   font-weight: bold;
   font-size: 32px;
-  font-family: "Integral CF", sans-serif;
+  font-family: var( --font-primary);
 }
 
 .nav__list {
@@ -175,7 +174,7 @@ main {
 .nav__item {
   display: flex;
   align-items: center;
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
 
 }
 
@@ -198,6 +197,8 @@ main {
   display: flex;
   align-items: center;
   gap: 5px;
+  border: none;
+  outline: none;
 }
 
 .dropdown__content {
@@ -207,6 +208,8 @@ main {
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border: none;
+  outline: none;
 }
 
 .dropdown__button {
@@ -216,6 +219,8 @@ main {
   border: none;
   cursor: pointer;
   position: relative;
+  border: none;
+  outline: none;
 }
 
 .search {
@@ -258,7 +263,7 @@ main {
 .search__input::placeholder {
   color: rgba(0, 0, 0, 0.4);
   font-size: 16px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
 
 }
 
@@ -294,6 +299,19 @@ input[type="text"] {
   border: none;
 }
 
+
+/* HomePage */
+#homepage{
+  width: 86.11%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  flex-direction: column;
+  flex: 1 0 auto;
+
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -313,7 +331,7 @@ input[type="text"] {
   text-align: left;
   line-height: 1.5;
   font-weight: 900;
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
 }
 
 .hero__image-container {
@@ -523,7 +541,7 @@ input[type="text"] {
   font-size: 48px;
   text-align: center;
   margin: 100px 0;
-  font-family: "Integral CF", sans-serif;
+  font-family: var( --font-primary);
   font-weight: bold;
 
 }
@@ -585,7 +603,7 @@ input[type="text"] {
 
 .product-card h3 {
   font-size: 20px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
 
 }
 
@@ -648,7 +666,7 @@ input[type="text"] {
   margin-bottom: 50px;
   text-transform: uppercase;
   padding-top: 50px;
-  font-family: "Integral CF", sans-serif;
+  font-family: var( --font-primary);
 
 }
 
@@ -677,13 +695,23 @@ input[type="text"] {
   height: 290px;
 }
 
+
+.category-card a {
+ display: block;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ left: 0;
+ top: 0;
+}
+
 .category-card__name {
   position: absolute;
   top: 30px;
   left: 30px;
   font-size: 36px;
   font-weight: bold;
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
 
 }
 
@@ -740,7 +768,7 @@ input[type="text"] {
 .testimonials__title {
   font-size: 48px;
   margin: 0;
-  font-family: "Integral CF", sans-serif;
+  font-family: var( --font-primary);
 
 }
 
@@ -775,11 +803,13 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 0.7%;
+  margin: 0 auto;
+
 }
 
 .testimonial-card {
-  min-width: 27.77%;
+  max-width: 28%;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 20px;
@@ -830,10 +860,11 @@ input[type="text"] {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.5;
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
 
 }
 
+ /* Product Detail Page */
 
 #product-detail-page {
   display: flex;
@@ -853,11 +884,14 @@ input[type="text"] {
   gap: 3rem;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .tabs span {
   padding: 1rem 0;
   cursor: pointer;
+  width: 33%;
+  text-align: center;
 }
 
 .tabs span.active {
@@ -879,6 +913,11 @@ input[type="text"] {
   font-size: 1.2rem;
 }
 
+.controls-header-figure{
+  font-family: var(--font-secondary);
+  font-size: var(--fs-base);
+  font-weight: normal;
+}
 .controls {
   display: flex;
   align-items: center;
@@ -916,45 +955,46 @@ input[type="text"] {
 }
 
 /* Testimonial Card Styling */
-.testimonial-card__container {
+.testimonial-deck__container {
   display: flex;
-  background-color: #ffffff;
   width: 100%;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 20px;
   flex-wrap: wrap;
 }
-.testimonial-card_ {
+.testimonial-deck {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  margin-bottom: 20px;
-  width: 45%;
+  margin-bottom: 0;
+  width: calc(50% - 10px);
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
 }
 
-.testimonial-card___header {
+.testimonial-deck__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 }
 
-.testimonial-card___rating {
+.testimonial-deck__rating {
   display: flex;
 }
 
-.testimonial-card___rating .fas.fa-star {
+.testimonial-deck__rating .fas.fa-star {
   color: #FFD700;
   margin-right: 2px;
 }
 
-.testimonial-card___menu {
+.testimonial-deck__menu {
   color: #777;
   cursor: pointer;
 }
 
-.testimonial-card___author {
+.testimonial-deck__author {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
@@ -981,14 +1021,14 @@ input[type="text"] {
   font-size: 14px;
 }
 
-.testimonial-card___text {
+.testimonial-deck__text {
   color: #333;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 16px;
 }
 
-.testimonial-card___date {
+.testimonial-deck__date {
   color: #777;
   font-size: 12px;
   margin-top: 10px;
@@ -1036,7 +1076,7 @@ input[type="text"] {
   font-size: 2.5rem;
   font-weight: bold;
   max-width: 600px;
-  font-family: "Integral CF", sans-serif;
+  font-family: var( --font-primary);
 
 }
 
@@ -1053,7 +1093,7 @@ input[type="text"] {
 }
 
 .input-container::placeholder {
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
 }
 
 
@@ -1084,7 +1124,7 @@ input[type="text"] {
   font-weight: bold;
   cursor: pointer;
   width: 350px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
 
 }
 
@@ -1093,7 +1133,7 @@ input[type="text"] {
   padding: 0 0 20px;
   width: 100%;
   margin: 0 auto;
-  font-family: 'Satoshi', sans-serif;
+  font-family: var(--font-secondary);
   position: relative;
 }
 
@@ -1142,7 +1182,7 @@ input[type="text"] {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Integral CF", sans-serif;
+  font-family: var( --font-primary);
 
 }
 
