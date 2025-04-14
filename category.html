@@ -10,11 +10,9 @@
   <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/8c332603b5.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-
   <header class="header">
     <div class="header__content">
       <div class="header__toggle">
@@ -57,28 +55,245 @@
     </div>
   </header>
 
+  <main id="category-page">
+    <section class="breadcrumbs">
+      <a href="#">Home</a>
+      <div class="breadcrumbs-icon"><i class="fa-solid fa-chevron-right"></i></div> <a href="#">Casual</a>
+    </section>
 
 
+    <section class="category-container">
+      <aside class="categories">
+        <div class="sidebar">
+          <div class="section">
+            <div class="section-title">Filters <i class="fas fa-sliders-h"></i></div>
+            <ul class="item-list">
+              <li>T-shirts <i class="fas fa-chevron-right"></i></li>
+              <li>Shorts <i class="fas fa-chevron-right"></i></li>
+              <li>Shirts <i class="fas fa-chevron-right"></i></li>
+              <li>Hoodie <i class="fas fa-chevron-right"></i></li>
+              <li>Jeans <i class="fas fa-chevron-right"></i></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="section">
+            <div class="section-title">Price <i class="fas fa-chevron-down"></i></div>
+            <div class="slider-container">
+              <span>$50</span>
+              <input type="range" class="range" id="input-price"/>
+              <label for="input-price"></label>
+              <input type="range" class="range" />
+              <span>$200</span>
+            </div>
+          </div>
+          <hr>
+          <div class="section">
+            <div class="section-title">Colors <i class="fas fa-chevron-down"></i></div>
+            <div class="color-picker">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color selected"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+            </div>
+          </div>
+          <hr>
+          <div class="section">
+            <div class="section-title">Size <i class="fas fa-chevron-down"></i></div>
+            <div class="size-buttons">
+              <button>XX-Small</button>
+              <button>X-Small</button>
+              <button>Small</button>
+              <button>Medium</button>
+              <button class="selected">Large</button>
+              <button>X-Large</button>
+              <button>XX-Large</button>
+              <button>3X-Large</button>
+              <button>4X-Large</button>
+            </div>
+          </div>
+          <hr>
+          <div class="section">
+            <div class="section-title">Dress Style <i class="fas fa-chevron-down"></i></div>
+            <ul class="dress-style">
+              <li>Casual <i class="fas fa-chevron-right"></i></li>
+              <li>Formal <i class="fas fa-chevron-right"></i></li>
+              <li>Party <i class="fas fa-chevron-right"></i></li>
+              <li>Gym <i class="fas fa-chevron-right"></i></li>
+            </ul>
+          </div>
+          <button class="apply-filter">Apply Filter</button>
+        </div>
+      </aside>
 
 
-
-
-  <main></main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <section class="products-display">
+          <h2 class="section__header">Casual</h2>
+          <div class="products__container">
+              <div class="products-grid">
+                <div class="product-card-display">
+                  <img src="images/Frame 35.png" alt="Gradient Graphic T-shirt" />
+                  <h3 class="product-card__title">Gradient Graphic T-shirt</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="rating-score">1.356</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$145</span>
+                  </p>
+              </div>
+              <div class="product-card-display">
+                  <img src="images/image 9.png" alt="Polo with Tipping Details" />
+                  <h3 class="product-card__title">Polo with Tipping Details</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="rating-score">1.456</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$180</span>
+                  </p>
+              </div>
+              <div class="product-card-display">
+                  <img src="images/image 10.png" alt="Black Striped T-shirt" />
+                  <h3 class="product-card__title">Black Striped T-shirt</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="rating-score">500</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$120</span>
+                      <span class="product-price__old">$150</span>
+                      <span class="product-price__discount">-30%</span>
+                  </p>
+              </div>
+              <div class="product-card-display">
+                  <img src="images/Frame 33.png" alt="Skinny Fit Jeans" />
+                  <h3 class="product-card__title">Skinny Fit Jeans</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="rating-score">1.356</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$240</span>
+                      <span class="product-price__old">$260</span>
+                      <span class="product-price__discount">-20%</span>
+                  </p>
+              </div>
+              <div class="product-card-display">
+                  <img src="images/Frame 34.png" alt="Checkered Shirt" />
+                  <h3 class="product-card__title">Checkered Shirt</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="rating-score">4.56</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$180</span>
+                      <span class="product-price__old">$130</span>
+                      <span class="product-price__discount">-20%</span>
+                  </p>
+              </div>
+              <div class="product-card-display">
+                  <img src="images/Frame 38.png" alt="Sleeve Striped T-shirt" />
+                  <h3 class="product-card__title">Sleeve Striped T-shirt</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="rating-score">4.55</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$160</span>
+                  </p>
+              </div>
+              <div class="product-card-display">
+                  <img src="images/Frame 32.png" alt="Vertical Striped Shirt" />
+                  <h3 class="product-card__title">Vertical Striped Shirt</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="rating-score">0.06</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$212</span>
+                      <span class="product-price__old">$232</span>
+                      <span class="product-price__discount">-30%</span>
+                  </p>
+              </div>
+              <div class="product-card-display">
+                  <img src="images/Frame 39.png" alt="Courage Graphic T-shirt" />
+                  <h3 class="product-card__title">Courage Graphic T-shirt</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="rating-score">4.05</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$232</span>
+                  </p>
+              </div>
+              <div class="product-card-display">
+                  <img src="images/Frame 37.png" alt="Loose Fit Bermuda Shorts" />
+                  <h3 class="product-card__title">Loose Fit Bermuda Shorts</h3>
+                  <div class="product-card__rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="rating-score">3.06</span>
+                  </div>
+                  <p class="product-card__prices">
+                      <span class="product-price__current">$212</span>
+                  </p>
+              </div>
+            </div>
+            <br />
+            
+            <div class="pagination">
+              <div class="page-btn">
+                <i class="fas fa-arrow-left"></i> Previous
+              </div>
+          
+              <div class="page-number active">1</div>
+              <div class="page-number">2</div>
+              <div class="page-number">3</div>
+              <div class="ellipsis">...</div>
+              <div class="page-number">8</div>
+              <div class="page-number">9</div>
+              <div class="page-number">10</div>
+          
+              <div class="page-btn">
+                Next <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+        </div>
+      </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="newsletter">

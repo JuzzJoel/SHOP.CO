@@ -10,18 +10,15 @@
   <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/8c332603b5.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-
   <div id="new-visitor-alert" class="alert-box">
     <span class="close-button">&times;</span>
     <p>Sign up and get 20% off to your first order.
       <span class="alert__link"><a href="">Sign Up Now.</a></span>
     </p>
   </div>
-
   <header class="header">
     <div class="header__content">
       <div class="header__toggle">
@@ -64,29 +61,132 @@
     </div>
   </header>
 
-  <main>
-
+  <main id="cart-shop">
+    <div class="breadcrumbs">
+      <a href="#">Home</a>
+      <div class="breadcrumbs-icon"><i class="fa-solid fa-chevron-right"></i></div> <a href="#">Cart</a>
+    </div>
+    <div class="cart-content">
+      <h1>YOUR CART</h1>
+    
+      <div class="cart-container">
+          <div class="cart-items">
+              <div class="cart-item">
+                  <div class="item-image tshirt-img"></div>
+                  <div class="item-details">
+                      <div class="item-title">Gradient Graphic T-shirt</div>
+                      <div class="item-meta">Size: Large</div>
+                      <div class="item-meta">Color: White</div>
+                      <div class="item-price">$145</div>
+                  </div>
+                  <div class="item-actions">
+                      <div class="quantity-selector">
+                          <button class="quantity-btn">−</button>
+                          <input type="text" class="quantity-input" value="1">
+                          <button class="quantity-btn">+</button>
+                      </div>
+                      <button class="remove-btn">
+                          <svg class="trash-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M3 6h18"></path>
+                              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+              
+              <div class="cart-item">
+                  <div class="item-image checkered-img"></div>
+                  <div class="item-details">
+                      <div class="item-title">Checkered Shirt</div>
+                      <div class="item-meta">Size: Medium</div>
+                      <div class="item-meta">Color: Red</div>
+                      <div class="item-price">$180</div>
+                  </div>
+                  <div class="item-actions">
+                      <div class="quantity-selector">
+                          <button class="quantity-btn">−</button>
+                          <input type="text" class="quantity-input" value="1">
+                          <button class="quantity-btn">+</button>
+                      </div>
+                      <button class="remove-btn">
+                          <svg class="trash-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M3 6h18"></path>
+                              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+              
+              <div class="cart-item">
+                  <div class="item-image jeans-img"></div>
+                  <div class="item-details">
+                      <div class="item-title">Skinny Fit Jeans</div>
+                      <div class="item-meta">Size: Large</div>
+                      <div class="item-meta">Color: Blue</div>
+                      <div class="item-price">$240</div>
+                  </div>
+                  <div class="item-actions">
+                      <div class="quantity-selector">
+                          <button class="quantity-btn">−</button>
+                          <input type="text" class="quantity-input" value="1">
+                          <button class="quantity-btn">+</button>
+                      </div>
+                      <button class="remove-btn">
+                          <svg class="trash-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M3 6h18"></path>
+                              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="cart-summary">
+              <div class="summary-card">
+                  <div class="summary-title">Order Summary</div>
+                  
+                  <div class="summary-row">
+                      <div>Subtotal</div>
+                      <div>$565</div>
+                  </div>
+                  
+                  <div class="summary-row">
+                      <div>Discount (-20%)</div>
+                      <div class="discount">-$113</div>
+                  </div>
+                  
+                  <div class="summary-row">
+                      <div>Delivery Fee</div>
+                      <div>$15</div>
+                  </div>
+                  
+                  <div class="summary-row summary-total">
+                      <div>Total</div>
+                      <div>$467</div>
+                  </div>
+                  
+                  <div class="promo-input">
+                      <svg class="promo-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                          <path d="M2 17l10 5 10-5"></path>
+                          <path d="M2 12l10 5 10-5"></path>
+                      </svg>
+                      <input type="text" placeholder="Add promo code">
+                      <button class="apply-btn">Apply</button>
+                  </div>
+                  
+                  <button class="checkout-btn">
+                      Go to Checkout
+                      <span>→</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+    </div>
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <footer class="footer">
     <div class="newsletter">
