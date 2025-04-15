@@ -888,9 +888,9 @@ input[type="text"] {
  /* Product Detail Page */
 
 #product-detail-page {
-  display: flex;
+  display:block;
   justify-content: center;
-  width: 86.11%;
+  width: 86.11vw;
   margin: 0 auto;
   padding: 50px 0;
   flex-direction: column;
@@ -899,13 +899,12 @@ input[type="text"] {
 
 /* Product Detail Page */
 .breadcrumbs {
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  display: block;
+  position: absolute;
+  padding: 20px 0 0 40px;
   font-family: var(--font-secondary);
   font-size: var(--fs-base);
-  margin-top: -35px;
+
 }
 
 .breadcrumbs.icon {
@@ -1403,11 +1402,14 @@ input[type="text"] {
 
 .product-display{
   width: 75%;
-  display: flex;
+  display:flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
+.product-container--casual{
+  width: 200px;
+}
 
 /* Category Page */
 .sidebar {
@@ -1607,25 +1609,47 @@ hr {
 
 
   /* CART PAGE*/
+
+  #cart-shop{
+  width: 86.11vw;
+  display: block;
+  margin: 0 auto;
+  }
    
+
+ .cart-content{
+display: flex;
+flex-direction: column;
+width: 100%;
+margin: 0 auto;
+ }
+
   h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
   }
   
-  .cart-container {
+   .cart-container {
     display: flex;
     gap: 20px;
   }
   
   .cart-items {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:58%;
+    border-radius: 20px;
+
   }
   
   .cart-summary {
-    width: 320px;
+    width: 38%;
+    display: flex;
   }
+  
   
   .cart-item {
     display: flex;
@@ -1636,32 +1660,30 @@ hr {
   }
   
   .item-image {
-    width: 80px;
-    height: 80px;
+    width: 124px;
+    height: 124px;
     border-radius: 5px;
     margin-right: 15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #f0f0f0;
+
   }
   
-  .tshirt-img {
-    background-color: #f0f0f0;
-    background-image: url('/api/placeholder/80/80');
+  .item-image:nth-child(1) {
+    background-image: url("images/image 18.png");
   }
-  
-  .checkered-img {
-    background-color: #f0f0f0;
-    background-image: url('/api/placeholder/80/80');
+  .item-image:nth-child(2) {
+    background-image: url("images/image 19.png");
   }
-  
-  .jeans-img {
-    background-color: #f0f0f0;
-    background-image: url('/api/placeholder/80/80');
+  .item-image:nth-child(3) {
+    background-image: url("images/image 18.png");
   }
   
   .item-details {
     flex: 1;
+  
   }
   
   .item-title {
@@ -1684,18 +1706,22 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
   }
   
   .quantity-selector {
     display: flex;
     align-items: center;
     margin-right: 15px;
+    width:125px;
+    height: 44px;
+    background-color: #f0f0f0;
+    border-radius: 62px;
+
+
   }
   
   .quantity-btn {
-    width: 25px;
-    height: 25px;
-    background-color: #e0e0e0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -1706,7 +1732,7 @@ hr {
   }
   
   .quantity-input {
-    width: 30px;
+    width: 50px;
     text-align: center;
     border: none;
     background: transparent;
@@ -1723,14 +1749,16 @@ hr {
   }
   
   .trash-icon {
-    color: #ff3b30;
-    font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
   }
   
   .summary-card {
     background-color: #f7f7f7;
     border-radius: 10px;
     padding: 20px;
+    width: 100%;
   }
   
   .summary-title {
@@ -1803,7 +1831,7 @@ hr {
   }
 
 
-
+ */
 
 
 
