@@ -77,7 +77,7 @@
           </div>
           <hr>
           <div class="section">
-            <div class="section-title">Price <i class="fas fa-chevron-down"></i></div>
+            <div class="section-title">Price <i class="fas fa-chevron-up"></i></div>
             <div class="slider-container">
               <span>$50</span>
               <input type="range" class="range" id="input-price"/>
@@ -87,7 +87,7 @@
           </div>
           <hr>
           <div class="section">
-            <div class="section-title">Colors <i class="fas fa-chevron-down"></i></div>
+            <div class="section-title">Colors <i class="fas fa-chevron-up"></i></div>
             <div class="color-picker">
               <div class="color"></div>
               <div class="color"></div>
@@ -103,7 +103,7 @@
           </div>
           <hr>
           <div class="section">
-            <div class="section-title">Size <i class="fas fa-chevron-down"></i></div>
+            <div class="section-title">Size <i class="fas fa-chevron-up"></i></div>
             <div class="size-buttons">
               <button>XX-Small</button>
               <button>X-Small</button>
@@ -118,7 +118,7 @@
           </div>
           <hr>
           <div class="section">
-            <div class="section-title">Dress Style <i class="fas fa-chevron-down"></i></div>
+            <div class="section-title">Dress Style <i class="fas fa-chevron-up"></i></div>
             <ul class="dress-style">
               <li>Casual <i class="fas fa-chevron-right"></i></li>
               <li>Formal <i class="fas fa-chevron-right"></i></li>
@@ -131,12 +131,20 @@
       </aside>
 
 
-      <section class="products-display" id="casual">
-          <h2 class="section__header">Casual</h2>
-          <div class="products__container--casual">
-              <div class="products-grid--casualF">
+      <section class="products-display--casual" id="casual">
+
+        <div class="products-display-heading">
+          <span class="products-display-heading-left">
+            Casual
+          </span>
+          <span class="products-display-heading-right">
+            Showing 1-10 of 100 Products
+            Sort by:<span class="products-display-heading-right-item"> Most Popular <i class="fas fa-chevron-down"></i></span>
+          </span>
+        </div>
+              <div class="products-grid--casual">
                 <div class="product-card-display">
-                  <img src="images/Frame 35.png" alt="Gradient Graphic T-shirt" />
+                  <img src="images/image 8.png" alt="Gradient Graphic T-shirt" />
                   <h3 class="product-card__title">Gradient Graphic T-shirt</h3>
                   <div class="product-card__rating">
                       <span class="fa fa-star checked"></span>
@@ -270,13 +278,17 @@
                   </p>
               </div>
             </div>
+            
             <br />
             
             <div class="pagination">
-              <div class="page-btn">
-                <i class="fas fa-arrow-left"></i> Previous
-              </div>
-          
+              <span class="page-btn-left">
+                <div class="page-btn">
+                  <i class="fas fa-arrow-left"></i> Previous
+                </div>
+              </span>
+            
+              <span class="page-numbers-list">
               <div class="page-number active">1</div>
               <div class="page-number">2</div>
               <div class="page-number">3</div>
@@ -284,12 +296,16 @@
               <div class="page-number">8</div>
               <div class="page-number">9</div>
               <div class="page-number">10</div>
+              </span>
           
-              <div class="page-btn">
-                Next <i class="fas fa-arrow-right"></i>
-              </div>
+          
+              <span class="page-btn-right">
+                <div class="page-btn">
+                  <i class="fas fa-arrow-right"></i> Next
+                </div>
+              </span>
             </div>
-        </div>
+          </div>
       </section>
     </section>
   </main>
