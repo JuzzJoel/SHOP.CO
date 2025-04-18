@@ -972,9 +972,10 @@ input[type="text"] {
 .level{
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
+
 }
 .info {
-  max-width: 500px;
+  max-width: 90%;
 }
 
 .info h1 {
@@ -1107,13 +1108,14 @@ input[type="text"] {
 }
 
 .quantity--selector {
-  display: flex;
+  display:block;
   align-items: center;
   margin-right: 15px;
   width: 170px;
   height: 52px;
   background-color: #f0f0f0;
   border-radius: 62px;
+  float: left;
 }
 
 .quantity-bunn {
@@ -1136,11 +1138,13 @@ input[type="text"] {
   background: black;
   color: white;
   padding: 1rem;
-  width: 100%;
+  width: 70%;
   border: none;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
+  display: block;
+  float: right;
 }
 
 /* Product Info */
