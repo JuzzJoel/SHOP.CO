@@ -191,6 +191,7 @@ body::-webkit-scrollbar {
   color: black;
   border: none;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .header-dropdown{
@@ -212,12 +213,27 @@ body::-webkit-scrollbar {
 .dropdown__content {
   display: none;
   position: absolute;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  inset:100% 0 0 -50% ;
+  min-width:  100px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border: none;
   outline: none;
   background-color: white;
+}
+
+.dropdown__content a {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-width: fit-content;
+min-width: 20%;
+  background-color: white;
+}
+
+.dropdown__content a:hover{
+
+  background-color: #f1f1f1;
 }
 
 .dropdown__button {
@@ -2109,7 +2125,7 @@ h1 {
 .footer__content__container {
   background-color: #f0f0f0;
   width: 100%;
-  padding: 80px 0 0;
+  padding: 130px 0 0;
 }
 
 .footer__content {
@@ -2118,7 +2134,7 @@ h1 {
   justify-content: space-between;
   padding: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 100vw;
+  width: 86.11%;
   margin: 0 auto;
 }
 
@@ -2176,7 +2192,7 @@ h1 {
 
 .footer__bottom {
   border-top: 1px solid #ddd;
-  padding-top: 20px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2681,12 +2697,11 @@ h1 {
   margin: 0 auto;
   position: relative !important;
   z-index: 10;
-  bottom: -1000px !important;
 }
 
 #now{
   position: relative !important;
-  bottom: -100px !important;
+  bottom: -20px !important;
 }
 .newsletter__content {
   width: 86.11%;
@@ -2766,25 +2781,30 @@ h1 {
   flex-shrink: 0;
   width: 100vw;
   margin: 0 ;
+  min-height: 40vh;
   font-family: var(--font-secondary);
   position: relative;
   -webkit-user-drag: none;
+
 }
 
 .footer__content__container {
   background-color: #f0f0f0;
-  width: 100%;
+  width: 86.11%;
   padding: 80px 0 0;
+    margin: 0 auto;
 }
 
 .footer__content {
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 92vw;
+  width: 100%;
   margin: 0 auto;
+  min-height: 50vh;
 }
 
 .footer__column {
