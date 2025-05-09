@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart -SHOP.CO - Premium Fashion Destination</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8c332603b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="new-visitor-alert" class="alert-box">
+    <div class="alert-box-container">
+      <span class="close-button">&times;</span>
+      <p>Sign up and get 20% off to your first order.
+        <span class="alert__link"><a href="">Sign Up Now</a></span>
+      </p>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="header__logo">
+        <a href="index.html#home">SHOP.CO</a>
+      </div>
+      <div class="nav-container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <div class="header-dropdown ">
+                <a href="product-detail.html" class="nav__link">Shop</a>
+                <i class="fa fa-angle-down dropdown__icon"></i>
+                <div class="dropdown__content">
+                  <a href="#">Men</a>
+                  <a href="#">Women</a>
+                  <a href="#">Children</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item"><a href="index.html#top__sales" class="nav__link">On Sale</a></li>
+            <li class="nav__item"><a href="index.html#new__arrivals" class="nav__link">New Arrivals</a></li>
+            <li class="nav__item"><a href="index.html#brands" class="nav__link">Brands</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-toggle-sidebar">
+
+        <div class="search">
+          <div class="search__container">
+            <i class="fa-solid fa-search search-icon"></i>
+            <input type="text" class="search__input" id="search" placeholder="Search for products..." />
+          </div>
+        </div>
+        <div class="header__icons">
+
+          <i class="fa-solid fa-search header-icon mobile-search-icon "></i>
+
+          <a href="cart.html"><i class="fa-solid fa-shopping-cart header__icon"></i></a>
+          <a href="#"><i class="fa-regular fa-circle-user header__icon"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="cart-shop">
+    <div class="cart-content">
+      <h1>YOUR CART</h1>
+      <div class="cart-container">
+        <div class="cart-items">
+          <div class="cart-item">
+            <div class="item-image"></div>
+            <div class="item-details">
+              <div class="item-title">Gradient Graphic T-shirt</div>
+              <div class="item-meta">Size: Large</div>
+              <div class="item-meta">Color: White</div>
+              <div class="item-price">$145</div>
+            </div>
+            <div class="item-actions">
+              <span class="quantity-selector">
+                <button class="quantity-btn">−</button>
+                <span class="quantity-btn figure">1</span>
+                <button class="quantity-btn">+</button>
+              </span>
+              <button class="remove-btn">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="item-image">
+            </div>
+            <div class="item-details">
+              <div class="item-title">Checkered Shirt</div>
+              <div class="item-meta">Size: Medium</div>
+              <div class="item-meta">Color: Red</div>
+              <div class="item-price">$180</div>
+            </div>
+            <div class="item-actions">
+              <span class="quantity-selector">
+                <button class="quantity-btn">−</button>
+                <span class="quantity-btn figure">1</span>
+                <button class="quantity-btn">+</button>
+              </span>
+              <button class="remove-btn">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="item-image "></div>
+
+            <div class="item-details">
+              <div class="item-title">Skinny Fit Jeans</div>
+              <div class="item-meta">Size: Large</div>
+              <div class="item-meta">Color: Blue</div>
+              <div class="item-price">$240</div>
+            </div>
+            <div class="item-actions">
+              <span class="quantity-selector">
+                <button class="quantity-btn">−</button>
+                <span class="quantity-btn figure">1</span>
+                <button class="quantity-btn">+</button>
+              </span>
+              <button class="remove-btn">
+                <i class="fa-solid fa-trash-can"></i>
+
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cart-summary">
+          <div class="summary-card">
+            <div class="summary-title">Order Summary</div>
+
+            <div class="summary-row">
+              <div>Subtotal</div>
+              <div>$565</div>
+            </div>
+
+            <div class="summary-row">
+              <div>Discount (-20%)</div>
+              <div class="discount">-$113</div>
+            </div>
+
+            <div class="summary-row">
+              <div>Delivery Fee</div>
+              <div>$15</div>
+            </div>
+
+            <div class="summary-row summary-total">
+              <div>Total</div>
+              <div>$467</div>
+            </div>
+
+            <div class="promo-input">
+              <div class="promo-input-box">
+                <input type="text" class="promo__text--box" placeholder="      Add promo code" />
+                <i class="fa-solid fa-tag"></i>
+              </div>
+              <button class="apply-btn">Apply</button>
+            </div>
+
+            <button class="checkout-btn">
+              Go to Checkout
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="newsletter" id="now">
+      <div class="newsletter__content">
+        <div class="newsletter__column">
+          <h2 class="newsletter__title">STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h2>
+          <div class="newsletter__form">
+            <div class="input-container">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" class="newsletter__input" placeholder="Enter your email address" />
+            </div>
+            <button class="newsletter__button">Subscribe to Newsletter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__content__container">
+      <div class="footer__content">
+        <div class="footer__logo__container ">
+          <div class="footer__logo"><a href="index.html#home">SHOP.CO</a></div>
+          <div class="footer__description">
+            We have clothes that suits your style and <br> which you're
+            proud to wear. From women to men.
+          </div>
+          <div class="social-links">
+            <i class="fab fa-twitter social-links__icon"></i>
+            <i class="fab fa-facebook-f social-links__icon"></i>
+            <i class="fab fa-instagram social-links__icon"></i>
+            <i class="fab fa-github social-links__icon"></i>
+          </div>
+        </div>
+        <div class="footer__column">
+
+
+
+          <div class="footer__columns">
+            <h4 class="footer__column-title">Company</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">About</li>
+              <li class="footer__list-item">Features</li>
+              <li class="footer__list-item">Works</li>
+              <li class="footer__list-item">Career</li>
+            </ul>
+          </div>
+
+          <div class="footer__columns">
+            <h4 class="footer__column-title">Help</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Customer Support</li>
+              <li class="footer__list-item">Delivery Details</li>
+              <li class="footer__list-item">Terms & Conditions</li>
+              <li class="footer__list-item">Privacy Policy</li>
+            </ul>
+          </div>
+
+          <div class="footer__columns">
+            <h4 class="footer__column-title">FAQ</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Account</li>
+              <li class="footer__list-item">Manage Deliveries</li>
+              <li class="footer__list-item">Orders</li>
+              <li class="footer__list-item">Payments</li>
+            </ul>
+          </div>
+
+          <div class="footer__columns">
+            <h4 class="footer__column-title">Resources</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Free eBooks</li>
+              <li class="footer__list-item">Development Tutorial</li>
+              <li class="footer__list-item">How to - Blog</li>
+              <li class="footer__list-item">Youtube Playlist</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom__left">Shop.co © 2000–2023, All Rights Reserved</div>
+        <div class="payment-methods">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/48/paypal.png" alt="Paypal" />
+          <img src="https://img.icons8.com/color/48/apple-pay.png" alt="Apple Pay" />
+          <img src="https://img.icons8.com/color/48/google-pay.png" alt="Google Pay" />
+        </div>
+      </div>
+  </footer>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
