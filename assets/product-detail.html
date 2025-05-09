@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Product Details Page - SHOP.CO - Premium Fashion Destination</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
         rel="stylesheet">
@@ -13,29 +13,30 @@
 
 </head>
 <body>
-    <div id="new-visitor-alert" class="alert-box">
+<div id="new-visitor-alert" class="alert-box">
+    <div class="alert-box-container">
         <span class="close-button">&times;</span>
         <p>Sign up and get 20% off to your first order.
             <span class="alert__link"><a href="">Sign Up Now</a></span>
         </p>
     </div>
+</div>
 
-    <header class="header">
-        <div class="header__content">
-            <div class="header__toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="header__logo">
-                <a href="index.html#home">SHOP.CO</a>
-            </div>
+<header class="header">
+    <div class="header__content">
+        <div class="header__toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header__logo">
+            <a href="/assets/index.html#home">SHOP.CO</a>
+        </div>
+        <div class="nav-container">
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <div class="header-dropdown">
-                            <button class="dropdown__button">
-                                <a href="product-detail.html">Shop</a>
-                                <i class="fa fa-angle-down dropdown__icon"></i>
-                            </button>
+                        <div class="header-dropdown ">
+                            <a href="/assets/product-detail.html" class="nav__link">Shop</a>
+                            <i class="fa fa-angle-down dropdown__icon"></i>
                             <div class="dropdown__content">
                                 <a href="#">Men</a>
                                 <a href="#">Women</a>
@@ -43,27 +44,31 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav__item"><a href="index.html#top-sales" class="nav__link">On Sale</a></li>
-                    <li class="nav__item"><a href="index.html#new__arrivals" class="nav__link">New Arrivals</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Brands</a></li>
+                    <li class="nav__item"><a href="/assets/index.html#top__sales" class="nav__link">On Sale</a></li>
+                    <li class="nav__item"><a href="/assets/index.html#new__arrivals" class="nav__link">New Arrivals</a>
+                    </li>
+                    <li class="nav__item"><a href="/assets/index.html#brands" class="nav__link">Brands</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="mobile-toggle-sidebar">
+
             <div class="search">
                 <div class="search__container">
-                    <i class="fa-solid fa-search"></i>
+                    <i class="fa-solid fa-search search-icon"></i>
                     <input type="text" class="search__input" id="search" placeholder="Search for products..." />
                 </div>
-
             </div>
             <div class="header__icons">
-                <a href="cart.html"><i class="fa-solid fa-shopping-cart header__icon"></i></a>
-                <a href="#"><i class="fa fa-user-circle-o header__icon"></i></a>
+
+                <i class="fa-solid fa-search header-icon mobile-search-icon "></i>
+
+                <a href="/assets/cart.html"><i class="fa-solid fa-shopping-cart header__icon"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-user header__icon"></i></a>
             </div>
         </div>
-        <div class="breadcrumbs">
-            <a href="#">Home</a> <div class="breadcrumbs-icon"><i class="fa-solid fa-chevron-right"></i></div> <a href="#">Shop</a> <div class="breadcrumbs-icon"><i class="fa-solid fa-chevron-right"></i></div> <a href="#">Item</a> <div class="breadcrumbs-icon"><i class="fa-solid fa-chevron-right"></i></div> <a href="#">T-shirts</a>
-        </div>
-    </header>
+    </div>
+</header>
 
 
 
@@ -336,7 +341,7 @@
             <div class="products__container">
                 <div class="products-grid">
                     <div class="product-card">
-                        <img src="images/image 7.png" alt="Polo with Contrast Trims" />
+              <img src="/images/image 7.png" alt="Polo with Contrast Trims" />
                         <h3 class="product-card__title">Polo with Contrast Trims</h3>
                         <div class="product-card__rating">
                             <span class="fa fa-star checked"></span>
@@ -352,7 +357,7 @@
                         </p>
                     </div>
                     <div class="product-card">
-                        <img src="images/image 8.png" alt="Gradient Graphic T-shirt" />
+              <img src="/images/image 8.png" alt="Gradient Graphic T-shirt" />
                         <h3 class="product-card__title">Gradient Graphic T-shirt</h3>
                         <div class="product-card__rating">
                             <span class="fa fa-star checked"></span>
@@ -368,7 +373,7 @@
                         </p>
                     </div>
                     <div class="product-card">
-                        <img src="images/image 9.png " alt="Polo with Tipping Details" />
+              <img src="/images/image 9.png " alt="Polo with Tipping Details" />
                         <h3 class="product-card__title">Polo with Tipping Details</h3>
                         <div class="product-card__rating">
                             <span class="fa fa-star checked"></span>
@@ -385,7 +390,7 @@
                         </p>
                     </div>
                     <div class="product-card">
-                        <img src="images/image 10.png" alt="Black Striped T-shirt" />
+              <img src="/images/image 10.png" alt="Black Striped T-shirt" />
                         <h3 class="product-card__title">Black Striped T-shirt</h3>
                         <div class="product-card__rating">
                             <span class="fa fa-star checked"></span>
@@ -425,13 +430,14 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="footer__content__container">
             <div class="footer__content">
-                <div class="footer__column">
-                    <div class="footer__logo"><a href="index.html#home">SHOP.CO</a></div>
+                <div class="footer__logo__container ">
+                    <div class="footer__logo"><a href="/assets/index.html#home">SHOP.CO</a></div>
                     <div class="footer__description">
-                        We have clothes that suits your style and which you're proud to wear. From women to men.
+                        We have clothes that suits your style and <br> which you're
+                        proud to wear. From women to men.
                     </div>
                     <div class="social-links">
                         <i class="fab fa-twitter social-links__icon"></i>
@@ -440,50 +446,55 @@
                         <i class="fab fa-github social-links__icon"></i>
                     </div>
                 </div>
-
                 <div class="footer__column">
-                    <h4 class="footer__column-title">Company</h4>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">About</li>
-                        <li class="footer__list-item">Features</li>
-                        <li class="footer__list-item">Works</li>
-                        <li class="footer__list-item">Career</li>
-                    </ul>
-                </div>
-
-                <div class="footer__column">
-                    <h4 class="footer__column-title">Help</h4>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">Customer Support</li>
-                        <li class="footer__list-item">Delivery Details</li>
-                        <li class="footer__list-item">Terms & Conditions</li>
-                        <li class="footer__list-item">Privacy Policy</li>
-                    </ul>
-                </div>
-
-                <div class="footer__column">
-                    <h4 class="footer__column-title">FAQ</h4>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">Account</li>
-                        <li class="footer__list-item">Manage Deliveries</li>
-                        <li class="footer__list-item">Orders</li>
-                        <li class="footer__list-item">Payments</li>
-                    </ul>
-                </div>
-
-                <div class="footer__column">
-                    <h4 class="footer__column-title">Resources</h4>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">Free eBooks</li>
-                        <li class="footer__list-item">Development Tutorial</li>
-                        <li class="footer__list-item">How to - Blog</li>
-                        <li class="footer__list-item">Youtube Playlist</li>
-                    </ul>
+    
+    
+    
+                    <div class="footer__columns">
+                        <h4 class="footer__column-title">Company</h4>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">About</li>
+                            <li class="footer__list-item">Features</li>
+                            <li class="footer__list-item">Works</li>
+                            <li class="footer__list-item">Career</li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__columns">
+                        <h4 class="footer__column-title">Help</h4>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">Customer Support</li>
+                            <li class="footer__list-item">Delivery Details</li>
+                            <li class="footer__list-item">Terms & Conditions</li>
+                            <li class="footer__list-item">Privacy Policy</li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__columns">
+                        <h4 class="footer__column-title">FAQ</h4>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">Account</li>
+                            <li class="footer__list-item">Manage Deliveries</li>
+                            <li class="footer__list-item">Orders</li>
+                            <li class="footer__list-item">Payments</li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__columns">
+                        <h4 class="footer__column-title">Resources</h4>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">Free eBooks</li>
+                            <li class="footer__list-item">Development Tutorial</li>
+                            <li class="footer__list-item">How to - Blog</li>
+                            <li class="footer__list-item">Youtube Playlist</li>
+                        </ul>
+                    </div>
+    
                 </div>
             </div>
-
+    
             <div class="footer__bottom">
-                <div>Shop.co © 2000–2023, All Rights Reserved</div>
+                <div class="footer__bottom__left">Shop.co © 2000–2023, All Rights Reserved</div>
                 <div class="payment-methods">
                     <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
                     <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard" />
@@ -492,9 +503,9 @@
                     <img src="https://img.icons8.com/color/48/google-pay.png" alt="Google Pay" />
                 </div>
             </div>
-    </footer>
+            </footer>
     </div>
-      <script src="script.js"></script>
+      <script src="/js/script.js"></script>
 </body>
 
 </html>
