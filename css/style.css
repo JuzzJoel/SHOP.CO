@@ -527,6 +527,7 @@ body::-webkit-scrollbar {
   width: 200px;
   background: url(/vectors/Vector.png);
   background-repeat: no-repeat;
+  animation: Spin 10000ms ease-in infinite;
 }
 
 .hero__vector-two {
@@ -537,6 +538,7 @@ body::-webkit-scrollbar {
   width: 200px;
   background: url(/vectors/Vector-two.png);
   background-repeat: no-repeat;
+  animation: Spin 10000ms ease-in infinite;
 }
 
 /* Brands Section */
@@ -2849,4 +2851,15 @@ h1 {
     display: flex;
     justify-content: center;
   }
+}
+
+
+
+@keyframes Spin{
+  0%{
+    transform: rotate(0deg);
+  }
+   100% {
+      transform: rotate(360deg);
+    }
 }

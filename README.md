@@ -5,16 +5,35 @@
 A static website project created with a public and open-source Figma design, built using vanilla JavaScript, Font Awesome 5, HTML, and CSS.
 
 ## Table of Contents
+ [Section `Overiew`](#Overview)
+ ***
  [Section `Features`](#feature)
+  ***
+
  [Section `Features`](#feature)
+  ***
+
  [Section `Features`](#feature)
+  ***
+
  [Section `Features`](#feature)
+  ***
+
  [Section `Features`](#feature)
+  ***
+
  [Section `Features`](#feature)
+  ***
+
  [Section `Features`](#feature)
+  ***
+
  [Section `Features`](#feature)
+  ***
+
  [Section `Features`](#feature)
- [Section `Features`](#feature)
+  ***
+
 
 
 ## Overview
