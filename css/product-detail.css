@@ -2,21 +2,14 @@
 
 #product-detail-page {
     display: block;
-    justify-content: center;
     width: 86.11vw;
     margin: 0 auto;
     padding: 50px 0;
-    flex-direction: column;
 }
-
-
 
 /* Product Detail Page - Display Product */
 .container {
     display: block;
-    flex-direction: column;
-    gap: 2rem;
-    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -46,24 +39,21 @@
     gap: 50px;
 }
 
-.thumb:nth-child(1) {
-    background-image: url("/images/image 2.png");
-}
-
-.thumb:nth-child(2) {
-    background-image: url("/images/image 5.png");
-}
-
-.thumb:nth-child(3) {
-    background-image: url("/images/image 6.png");
-}
-
 .main-image {
     width: 550px;
     height: 780px;
-    background-image: url("/images/image 1.png");
-    background-size: cover;
-    background-position: center;
+    border-radius: 20px;
+}
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -73,7 +63,19 @@
     display: right;
     padding: 20px 24px;
 }
-
+.info-header{
+    text-transform: uppercase;
+}
+.rating-score{
+    font-size: 1rem;
+}
+.info-rating{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
 .level {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -131,9 +133,11 @@
 }
 
 .description {
+    display: block;
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .options {
@@ -153,30 +157,20 @@
     cursor: pointer;
     border: 2px solid transparent;
     padding: 2px;
-}
-
-.colors span:nth-child(1) {
-    background-color: #4f4631;
-}
-
-.colors span:nth-child(2) {
-    background: #314f4a;
-}
-
-.colors span:nth-child(3) {
-    background: #31344f
+    position: relative;
 }
 
 
-.active::after {
+.colors span.active::after {
     content: '\f00c';
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     color: white;
     position: absolute;
-    top: 10px;
-    left: 12px;
-    font-size: 14px;
+    top: 8px;
+    left: 9px;
+    font-size: 20px;
+   
 }
 
 
@@ -189,6 +183,7 @@
     background: white;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
 }
 
 .sizes button.active {

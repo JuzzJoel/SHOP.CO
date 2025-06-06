@@ -1,8 +1,21 @@
-import { newArrivalContent } from "../data/homePageAll/newArrivals.js";
-import { topSellingContent } from "../data/homePageAll/topSelling.js";
 
-document.querySelector('#new__arrivals .products-grid').innerHTML = newArrivalContent;
-document.querySelector('#top__sales .products-grid').innerHTML = topSellingContent;
+import { topSellingContent } from "../data/homePageAll/topSelling.js";
+import { newArrivalContent } from "../data/homePageAll/newArrivals.js";
+import { productDetailContent } from "../data/productDetail.js";
+import { casualCategoryContent } from "./category page/casualCategory.js";
+import { cart } from "../data/cartDisplay.js";
+
+const newArrivalsSection = document.querySelector('#new__arrivals .products-grid');
+if (newArrivalsSection) newArrivalsSection.innerHTML = newArrivalContent;
+const topSellingSection = document.querySelector('#top__sales .products-grid');
+if (topSellingSection) topSellingSection.innerHTML = topSellingContent; 
+const productDetailPage = document.querySelector('#product-detail-page .container');
+if (productDetailPage) productDetailPage.innerHTML = productDetailContent;
+const cartContainer = document.querySelector('#cart-container');
+if (cartContainer) cartContainer.innerHTML += cart;
+const casualCategory = document.querySelector('.product-container--casual');
+if (casualCategory) casualCategory.innerHTML = casualCategoryContent; // Clear existing content
+
 // This code dynamically generates the HTML content for new arrivals and top selling products and injects it into the page.
 let dropdown__icon = document.querySelector(".dropdown__icon");
 let dropdown__menu = document.querySelector(".dropdown__content");
@@ -44,3 +57,5 @@ if (nav__container && close__mobile__nav && hamburger) {
     nav__container.style.left = nav__container.style.left == "0%" ? "-100%" : "0%";
   });
 }
+
+console.log(casualCategoryContent);
