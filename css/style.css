@@ -1710,8 +1710,10 @@ body::-webkit-scrollbar {
 @keyframes Spin{
   0%{
     transform: rotate(0deg);
+    transform-origin: 0 0;
   }
    100% {
       transform: rotate(360deg);
+      transform-origin: 0 0;
     }
 }
