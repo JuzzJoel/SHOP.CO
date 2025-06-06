@@ -66,7 +66,8 @@ const topSelling = [
             "denim",
             "apparel"
         ]
-    }, {
+    },
+    {
         id: "b1234567-89ab-cdef-0123-456789abcdef",
         name: "Faded Skinny Jeans",
         image: "./images/Group 16.png",
