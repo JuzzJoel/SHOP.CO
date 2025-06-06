@@ -1,3 +1,9 @@
+import { newArrivalContent } from "../data/homePageAll/newArrivals.js";
+import { topSellingContent } from "../data/homePageAll/topSelling.js";
+
+document.querySelector('#new__arrivals .products-grid').innerHTML = newArrivalContent;
+document.querySelector('#top__sales .products-grid').innerHTML = topSellingContent;
+// This code dynamically generates the HTML content for new arrivals and top selling products and injects it into the page.
 let dropdown__icon = document.querySelector(".dropdown__icon");
 let dropdown__menu = document.querySelector(".dropdown__content");
 
